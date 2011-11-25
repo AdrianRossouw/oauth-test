@@ -1,0 +1,18 @@
+{
+  "author": "Development Seed <info@developmentseed.org> (developmentseed.org)",
+  "name": "test-oauth-client",
+  "description": "A client to test oauth",
+  "version": "0.0.0",
+  "engines": {
+    "node": "~v0.4.10"
+  },
+  "dependencies": {
+    "bones": "= 2.0.0",
+    "express": "2.4.4",
+    "backbone-stash": "= 0.5.0",
+    "underscore": "= 1.2.2",
+    "passport": "0.1.3",
+    "passport-twitter": "0.1.0"
+  },
+  "devDependencies": {}
+}

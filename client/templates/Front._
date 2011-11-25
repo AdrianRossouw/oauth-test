@@ -1,0 +1,5 @@
+<% if (!model.get('id')) { %>
+  <a href='/auth/twitter'>Log in with twitter?</a>
+<% } else { %>
+  Welcome back <%= model.get('username') %>
+<% } %>
