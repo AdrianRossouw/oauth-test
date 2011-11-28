@@ -1,0 +1,15 @@
+{
+    "passport": {
+        "twitter" : {
+            "consumerKey": "key",
+            "consumerSecret": "secret"
+        },
+        "oauth": {
+            "consumerKey": "key",
+            "consumerSecret": "secret",
+            "requestTokenURL": "http://localhost:4000/oauth/request-token",
+            "accessTokenURL": "http://localhost:4000/oauth/access-token",
+            "userAuthorizationURL": "http://localhost:4000/oauth/authorize"
+        }
+    }
+}

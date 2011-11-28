@@ -7,13 +7,14 @@ router = Backbone.Router.extend({
         var router = this,
             fetcher = this.fetcher();
 
+        var strategies = _(Bones.plugin.config.passport).keys();
         var user = new models.User(this.req.user || { id: null} );
-        router.send(views.Front, {model: user});
+        router.send(views.Front, {model: user, strategies: strategies});
     },
 
     // Helper to assemble the page title.
     pageTitle: function(view) {
-        var title =  'What is Bones?';
+        var title =  'Oauth Test application';
         return (view.pageTitle ? view.pageTitle + ' | ' + title : title);
     },
 

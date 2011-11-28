@@ -1,5 +1,12 @@
-<% if (!model.get('id')) { %>
-  <a href='/auth/twitter'>Log in with twitter?</a>
+<% if (!model.get('provider')) { %>
+  <ul>
+    <li><a href='/auth/twitter'>Log in with twitter?</a></li>
+    <li><a href='/auth/oauth'>Log in with oauth?</a></li>
+  </ul>
 <% } else { %>
-  Welcome back <%= model.get('username') %>
+  <% if (model.get('username')) { %>
+    Welcome back <%= model.get('username') %><br />
+  <% } %>
+  You are logged in via <%= model.get('provider') %>.<br />
+  <a href='/logout'>Log out</a>
 <% } %>
