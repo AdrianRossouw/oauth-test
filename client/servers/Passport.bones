@@ -1,6 +1,7 @@
 var passport = require('passport'),
     util = require('util'),
-    TwitterStrategy = require('passport-twitter').Strategy;
+    TwitterStrategy = require('passport-twitter').Strategy,
+    OauthStrategy = require('passport-oauth');
 
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
@@ -25,8 +26,8 @@ server = Bones.Server.extend({
         //   credentials (in this case, a token, tokenSecret, and Twitter profile), and
         //   invoke a callback with a user object.
         passport.use(new TwitterStrategy({
-                consumerKey: app.config.twitter_consumer_key,
-                consumerSecret: app.config.twitter_consumer_secret,
+                consumerKey: app.config.passport.twitter.consumer_key,
+                consumerSecret: app.config.passport.twitter.consumer_secret,
                 callbackURL: "http://moya.local:3000/auth/twitter/callback"
             },
             function(token, tokenSecret, profile, done) {

@@ -12,6 +12,7 @@
     "backbone-stash": "= 0.5.0",
     "underscore": "= 1.2.2",
     "passport": "0.1.3",
+    "passport-oauth": "0.1.1",
     "passport-twitter": "0.1.0"
   },
   "devDependencies": {}
