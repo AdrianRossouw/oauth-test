@@ -1,0 +1,14 @@
+
+{
+  "author": "Development Seed <info@developmentseed.org> (developmentseed.org)",
+  "name": "test-oauth-server",
+  "description": "A server to test oauth",
+  "version": "0.0.0",
+  "engines": {
+    "node": "~v0.4.10"
+  },
+  "dependencies": {
+    "oauth-server": "= 0.2.0"
+  },
+  "devDependencies": {}
+}
